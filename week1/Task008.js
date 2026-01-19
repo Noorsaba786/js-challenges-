@@ -6,6 +6,7 @@ let T = 2;
 
 let SI = (P * R * T) / 100;
 let CI = P * (Math.pow(1 + R / 100, T) - 1);
-
+// if we avoid to use Math.pow function we can use this formula instead:        
+// let CI = P * ((1 + R / 100) ** T - 1); here ** means power
 console.log("Simple Interest:", SI);
 console.log("Compound Interest:", CI);
