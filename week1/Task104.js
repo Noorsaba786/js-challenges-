@@ -1,4 +1,6 @@
 // create a funtion that reverse  just a number we coudl use mirror method 
+
+/*
 function reverseNumber(num) {
   let str = num.toString(); // convert number to string
   let arr = [];
@@ -35,3 +37,26 @@ function reverseNumber(num) {
 
 // Example
 console.log(reverseNumber(1000)); // Output: 54321 
+
+*/
+
+
+// another simple method without using string conversion
+
+function reverseNum(num)
+{
+let reverseNum = "" ;
+let  numToString ; 
+    numToString = num.toString();
+  
+    for(i = numToString.length-1 ; i>=0 ; i--)
+    {
+       reverseNum +=numToString[i]; 
+
+    }
+    return(reverseNum)
+}
+
+console.log(reverseNum(123)); 
+    
+     
